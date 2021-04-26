@@ -25,17 +25,4 @@ export class ClientController {
             res.status(HttpStatus.INTERNAL_SERVER_ERROR).send({ message: 'Internal server error. Please try again later' });
         }
     }
-    // @UseGuards(JwtAuthGuard)
-    // @Get('getAuth')
-    // async getAuth(
-    //     @Req() req,
-    //     @Res() res
-    // ) {
-    //     try {
-    //         const user = req.user;
-    //         res.status(HttpStatus.OK).send({ user });
-    //     } catch (e) {
-    //         res.status(HttpStatus.INTERNAL_SERVER_ERROR).send({ message: 'Internal server error. Please try again later' });
-    //     }
-    // }
 }
